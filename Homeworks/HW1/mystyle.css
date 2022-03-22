@@ -1,0 +1,198 @@
+/* background color of my overall webpage */
+body {
+	background-color: #ffedd8;
+}
+/* main header stylized */
+h1 {
+	color: #583101;
+	font-family: "brush script mt", cursive;
+	font-size: 40pt;
+	text-align: center;
+	text-decoration: underline;
+	height: 100px;
+}
+
+/* stylizing my about section div */
+.aboutsection {
+	background-color: #f3d5b5;
+	font-family: "tahoma", sans-serif;
+	border-radius: 10px;
+	margin: auto;
+}
+.aboutheader {
+	color: #a47148;
+	font-size: 24pt;
+	text-align: center;
+	width: 80%;
+	height: 15px;
+}
+.aboutparagraph {
+	color: #6c584d;
+	font-size: 16pt;
+	text-indent: 70px;
+	text-align: center;
+	width: 80%;
+	line-height: 1.6;
+}
+/* correcting my headshot positioning */
+.headshot {
+	height: 303px;
+	width: 227px;
+	border-radius: 6px;
+	float: right;
+}
+/* correcting my art positioning */
+.viviart {
+	height: 304px;
+	width: 148px;
+	float: left;
+}
+
+/* stylizing my nested lists div */
+.schooljoblist {
+	color: #6c584d;
+	font-family: georgia, serif;
+	font-size: 15pt;
+	float: left;
+	margin-left: 250px;
+	line-height: 1.5;
+}
+.headlist {
+	color: #a47148;
+	font-size: 21pt;
+}
+ul.unordered {
+	list-style-type: square;
+}
+
+/* correcting my gif positioning */
+.vivigif1 {
+	height: 88px;
+	width: 134px;
+	float: right;
+	margin-right: 100px;
+	margin-top: 100px;
+}
+
+/* stylizing my zebra table div */
+.zebratable {
+	color: #a47148;
+	text-align: center;
+	font-family: tahoma, sans-serif;
+	border-radius: 7px;
+}
+.zebrahead {
+	color: #a47148;
+	font-size: 23pt;
+}
+.zebradesc {
+	color: #6c584d;
+	font-size: 13pt;
+}
+table {
+	background-color: #ede0d4;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+}
+th, td {
+	color: #6c584d;
+	text-align: center;
+	padding: 16px;
+}
+tr:nth-child(even) {
+	background-color: #e6ccb2;
+}
+
+/* correcting more gifs positioning */
+.steviegif {
+	height: 152px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+}
+.vivigif2 {
+	height: 142px;
+	width: 88px;
+	float: left;
+	margin-top: 110px;
+}
+
+/* stylizing my hobbies & interests div */
+.interests {
+	color: #6c584d;
+	font-family: "comic sans ms", cursive;
+	font-size: 16pt;
+	float: left;
+	margin-left: 300px;
+	line-height: 1.5;
+}
+.headint {
+	color: #a47148;
+	font-size: 24pt;
+}
+
+/* correcting another art positioning */
+.emmyart {
+	height: 303px;
+	width: 151px;
+	float: right;
+	margin-right: 40px;
+}
+
+/* stylizing my quote div */
+.quote {
+	color: #581908;
+	text-align: center;
+	text-indent: 150px;
+	font-family: "trebuchet ms", sans-serif;
+	font-size: 22pt;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 1.25;
+}
+/* giving an appropriate size for this png */
+.kokomi {
+	height: 183px;
+	width: 183px;
+}
+
+/* stylizing my last div */
+.lastsection {
+	background-color: #f3d5b5;
+	color: #6c584d;
+	font-size: 16pt;
+	text-indent: 150px;
+}
+.lastheader {
+	color: #a47148;
+	font-size: 23pt;
+	text-indent: 200px;
+	width: 20%;
+}
+.val {
+	height: 51px;
+	width: 143px;
+	float: right;
+}
+
+/* giving links a different color and italic styling */
+a {
+	color: #81171b;
+	font-style: italic;
+}
+/* giving links a background cover when hovering cursor over links */
+a:hover {
+	background-color: #dde5b6;
+	color: #436a36;
+}
+
+/* spanning certain words a shade of red and bolded */
+/* words: Georgia State, Computer Science, Favorite, Web Development */
+.highlight {
+	color: #e8000d;
+	font-weight: bold;
+}

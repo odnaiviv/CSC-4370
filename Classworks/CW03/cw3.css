@@ -1,0 +1,40 @@
+/* centering h1 and h2 */
+h1, h2 {
+	text-align: center;
+}
+/* the main content area */
+main {
+	display: flex;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* wrapping left column and making width 1/3 */
+aside {
+	flex-basis: 33%;
+}
+/* wrapping right column and making width 2/3 */
+section {
+	flex-basis: 67%;
+}
+/* scaling image down and floating it to the right */
+section img {
+	width: 200px;
+	float: right;
+}
+/* positioning paragraph below image */
+.clearing {
+	clear: both;
+}
+/* stylizing both columns */
+.columns {
+	padding: 2em;
+	margin: 2em;
+	border: 4px solid red;
+	border-style: dashed;
+}
+/* fizing this paragraph in place */
+.fixing {
+	position: fixed;
+	bottom: 5px;
+}
