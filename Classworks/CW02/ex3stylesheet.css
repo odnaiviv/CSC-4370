@@ -1,0 +1,13 @@
+.external h1 {
+	color: red;
+	margin-left: 2cm;
+}
+.external h2 {
+	color: red;
+	margin-left: 4cm;
+}
+.external p {
+	text-indent: 2cm;
+	color: darkred;
+	margin-left: 6cm;
+}

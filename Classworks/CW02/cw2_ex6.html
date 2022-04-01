@@ -1,0 +1,240 @@
+<!-- CW 02 Exercise 6 -->
+<html>
+
+<head>
+<title>CW 02: Exercise 6</title>
+</head>
+
+<style>
+h1.mainheader { /* header for the main website */
+	text-align: center;
+	font-weight: bold;
+}
+h2 { /* aligning header to center */
+	text-align: center;
+}
+h3 { /* underlining this header */
+	text-decoration: underline;
+}
+.artdiv { /* using div for the art department section */
+	background-color: lightgreen;
+	font-family: arial;
+	text-align: center;
+}
+.sciencediv { /* using another div for the science department */
+	background-color: lightblue;
+	font-family: courier new;
+	text-align: center;
+}
+.annualdiv { /* using another div to make the annual timetable */
+	text-align: center;
+}
+table, td, th { /* creating the table structure */
+	border: 1px solid black;
+	text-align: center;
+}
+table.assignments { /* table format for assignments */
+	border-collapse: collapse;
+	width: 35%;
+	height: 15%;
+	margin-left: auto;
+	margin-right: auto;
+}
+table.exams { /* table format for exam dates */
+	border-collapse: collapse;
+	width: 20%;
+	height: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	color: darkred;
+}
+table.time { /* table format for student timetables */
+	width: 70%;
+	height: 15%;
+	margin-left: auto;
+	margin-right: auto;
+}
+table.annual { /* table format for annual timetable */
+	width: 90%;
+	height: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+p { /* stylizing the paragraph text */
+	font-style: italic;
+	font-size: 12pt;
+	text-align: auto;
+}
+</style>
+
+<body>
+<h1 class = "mainheader">School of Art and Science</h1>
+<div class = "artdiv">
+<br>
+	<h2>Art Department</h2>
+	<h3>Assignment Due Dates</h3>
+	<table class = "assignments">
+		<tr>
+			<th></th>
+			<th>Due Date</th>
+		</tr>
+		<tr>
+			<th>Assignment 1</th>
+			<td>01/04/XX</td>
+		</tr>
+		<tr>
+			<th>Assignment 2</th>
+			<td>01/11/XX</td>
+		</tr>
+	</table>
+	<p>This is a sample table for letting students know when assignments are due.</p>
+	
+	<h3>Exam Dates</h3>
+	<table class = "exams">
+		<tr>
+			<th></th>
+			<th>Date</th>
+		</tr>
+		<tr>
+			<th>Exam 1</th>
+			<td>01/16/XX</td>
+		</tr>
+		<tr>
+			<th>Exam 2</th>
+			<td>TBD</td>
+		</tr>
+	</table>
+	<p>This is a sample table for dates of exams.</p>
+	
+	<h3>Student Timetables</h3>
+	<table class = "time">
+		<tr>
+			<th></th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr>
+		<tr>
+			<th>Week 1</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Week 2</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<p>This is a sample student timetable.</p>
+<br>
+</div>
+
+<br>
+
+<div class = "sciencediv">
+<br>
+	<h2>Science Department</h2>
+	<h3>Assignment Due Dates</h3>
+	<table class = "assignments">
+		<tr>
+			<th></th>
+			<th>Due Date</th>
+		</tr>
+		<tr>
+			<th>Assignment 1</th>
+			<td>01/07/22xx</td>
+		</tr>
+		<tr>
+			<th>Assignment 2</th>
+			<td>01/14/22xx</td>
+		</tr>
+	</table>
+	<p>This is a sample table for letting students know when assignments are due.</p>
+	
+	<h3>Exam Dates</h3>
+	<table class = "exams">
+		<tr>
+			<th></th>
+			<th>Date</th>
+		</tr>
+		<tr>
+			<th>Exam 1</th>
+			<td>01/21/XX</td>
+		</tr>
+		<tr>
+			<th>Exam 2</th>
+			<td>TBD</td>
+		</tr>
+	</table>
+	<p>This is a sample table for dates of exams.</p>
+	
+	<h3>Student Timetables</h3>
+	<table class = "time">
+		<tr>
+			<th></th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr>
+		<tr>
+			<th>Week 1</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Week 2</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<p>This is a sample student timetable.</p>
+<br>
+</div>
+
+<div class = "annualdiv">
+	<h3>Yearly Timetable</h3>
+	<table class = "annual">
+		<tr>
+			<th>Event Name</th>
+			<th>Date</th>
+			<th>Important Notices</th>
+		</tr>
+		<tr>
+			<td>Start of Spring Semester</td>
+			<td>01/02/XX</td>
+			<td>Come to school!</td>
+		</tr>
+		<tr>
+			<td>Add/Drop Period</td>
+			<td>01/10/XX</td>
+			<td>Last day to add/drop classes.</td>
+		</tr>
+		<tr>
+			<td>Art Museum Field Trip</td>
+			<td>01/23/XX</td>
+			<td>TBA</td>
+		</tr>
+	</table>
+	<p>This is a sample table for the annual dates of the school.</p>
+	
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!-- CW 02 Exercise 3 -->
+<html>
+
+<head>
+<title>CW 02: Exercise 3</title>
+<!-- linking to external style sheet -->
+<link rel = "stylesheet" href = "ex3stylesheet.css">
+</head>
+
+<!-- embedded/internal style -->
+<style>
+.internal h1 {
+	color: red;
+	margin-left: 2cm;
+}
+.internal h2 {
+	color: red;
+	margin-left: 4cm;
+}
+.internal p {
+	text-indent: 2cm;
+	color: darkred;
+	margin-left: 6cm;
+}
+</style>
+
+<body>
+<h1>Exercise 3</h1>
+<!-- scenario 1: internal style sheet -->
+<h3>Using Internal Style Sheet</h3>
+<div class = "internal">
+	<h1>h1 heading</h1>
+	<h2>h2 subheading</h2>
+	<p>Paragraph 1</p>
+	<p>Paragraph 2</p>
+	<h2>h2 subheading</h2>
+	<p>Paragraph 1</p>
+</div>
+<hr>
+<!-- scenario 2: embedded style sheet -->
+<h3>Using Embedded Style Sheet</h3>
+<h1 style = "color: red; margin-left: 2cm">h1 heading</h1>
+<h2 style = "color: red; margin-left: 4cm">h2 subheading</h2>
+<p style = "text-indent: 2cm; color: darkred; margin-left: 6cm">Paragraph 1</p>
+<p style = "text-indent: 2cm; color: darkred; margin-left: 6cm">Paragraph 2</p>
+<h2 style = "color: red; margin-left: 4cm">h2 subheading</h2>
+<p style = "text-indent: 2cm; color: darkred; margin-left: 6cm">Paragraph 1</p>
+<hr>
+<!-- scenario 3: linked to external style sheet -->
+<h3>Using External Style Sheet</h3>
+<div class = "external">
+	<h1>h1 heading</h1>
+	<h2>h2 subheading</h2>
+	<p>Paragraph 1</p>
+	<p>Paragraph 2</p>
+	<h2>h2 subheading</h2>
+	<p>Paragraph 1</p>
+</div>
+</body>
+
+</html>
