@@ -2,7 +2,7 @@
 
 ### Grade: 100 :D
 
-*Instructions: [Assignment 1 web programming.pdf](https://github.com/odnaiviv/CSC4370/blob/main/Homeworks/HW1/Assignment%201%20web%20programming.pdf) | [CODD Link](https://codd.cs.gsu.edu/~lhenry23/Web/Assign01/Assignment01.html)*
+*Instructions: [Assignment01.pdf](https://github.com/odnaiviv/CSC4370/blob/main/Homeworks/HW1/Assignment01.pdf) | [CODD Link](https://codd.cs.gsu.edu/~lhenry23/Web/Assign01/Assignment01.html)*
 
 >My Homework 01 Link: 
 >* CODD Link: https://codd.cs.gsu.edu/~vdo10/home.html
