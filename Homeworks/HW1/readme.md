@@ -1,8 +1,6 @@
-## HW 01 Instructions & Work
+## HW 01 Work
 
 ### Grade: 100 :D
-
-*Instructions: [Assignment01.pdf](https://github.com/odnaiviv/CSC4370/blob/main/Homeworks/HW1/Assignment01.pdf) | [CODD Link](https://codd.cs.gsu.edu/~lhenry23/Web/Assign01/Assignment01.html)*
 
 >My Homework 01 Link: 
 >* CODD Link: https://codd.cs.gsu.edu/~vdo10/home.html
