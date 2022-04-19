@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+    <title>Game of Life!</title>
+
+   
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="script.js"></script>
+  </head>
+
+
+<body>
+
+	<!-- main div -->
+	<div class="content">
+    <h1>Game of Life</h1>
+		<!-- buttons -->
+		<div class="controlbuttons">
+     <button id="startgame" onclick="startgame()">Start Game</button>
+			<button id="startautogen" onclick="startautogen()" class="hidden">Start Auto Generating</button>
+			<button id="stop" onclick="stopautogen()" class="hidden">Stop Auto Generating</button>
+      <button id="display" onclick="displayArray()" class="hidden">Display</button>
+			<button id="gen1" onclick="gen1()" class="hidden">+1 Generation</button>
+			<button id="gen23" onclick="gen23()" class="hidden">+23 Generations</button>
+			<button id="reset" onclick="reset()" class="hidden">Reset</button>
+      <button id="block" onclick="block()" class="hidden">Block</button>
+      <button id="blinker" onclick="blinker()" class="hidden">Blinker</button>
+      <button id="beacon" onclick="beacon()" class="hidden">Beacon</button>
+      <button id="glider" onclick="glider()" class="hidden">Glider</button>
+      <p id="generation" class="hidden">Generation:0</p>
+      <p id="population" class="hidden">Population:0</p>
+      
+		</div>
+    
+		<br>
+		<div id="grid"></div>
+	</div>
+
+</body>
+</html>
