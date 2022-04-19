@@ -1,4 +1,4 @@
-## Project 1 with Team 1
+# Project 1 with Team 1
 
 ### Grade: 96 :)
 

@@ -1,4 +1,4 @@
-## Project 2 with Team 8
+# Project 2 with Team 8
 
 ### Grade: 97 :)
 
