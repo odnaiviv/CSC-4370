@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CW06 - Problem 5</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		//function to shuffle the integers randomly
+		function shuffle (array) {
+			var current = array.length, temparray, index;
+			//checking for elements in array
+			while (current > 0) {
+				index = Math.floor(Math.random() * current);
+				//decrementing current index by 1
+				current--;
+				//swapping elements using bubble sort
+				temparray = array[current];
+				array[current] = array[index];
+				array[index] = temparray;
+			}
+			return array;
+		}
+		//creating random array using random number generator
+		var randomarray = [10, 20, 8, 4, 15, 7];
+		//printing results by calling function
+		document.write(shuffle(randomarray));
+		console.log(shuffle(randomarray));
+	</script>
+
+</body>
+</html>

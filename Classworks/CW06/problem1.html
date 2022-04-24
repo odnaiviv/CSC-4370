@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CW06 - Problem 1</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		//function for the fibonacci sequence series
+		var fibonacci = function (num) {
+			if (num == 1) {
+				return [0, 1];
+			}
+			else {
+				var sum = fibonacci (num - 1);
+				sum.push(sum[sum.length - 1] + sum[sum.length - 2]);
+				return sum;
+			}
+		}
+		//printing results by calling function
+		//using same number of elements as example
+		document.write(fibonacci(9));
+		console.log(fibonacci(9));
+	</script>
+
+</body>
+</html>

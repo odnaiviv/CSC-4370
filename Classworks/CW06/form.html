@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CW 06 Part 2</title>
+</head>
+<body>
+	<h2>CW 06 Part 2: Validating Forms with JavaScript</h2>
+	<br>
+	<!-- form with id, firstname, and lastname -->
+	<form name="part2form">
+		<!-- getting user info -->
+		<label>ID: 
+			<input type="text" name="id">
+		</label>
+		<br>
+		<label>FirstName: 
+			<input type="text" name="fn">
+		</label>
+		<br>
+		<label>LastName: 
+			<input type="text" name="ln">
+		</label>
+		<br>
+	</form>
+	<!-- submit button -->
+	<input onclick="validator();" type="submit" value="Add">
+	<br>
+	<p id="print"></p>
+
+
+	<script type="text/javascript">
+		function validator() {
+			//getting user info from documents
+			var idvalidate = document.forms["part2form"]["id"].value;
+			var firstvalidate = document.forms["part2form"]["fn"].value;
+			var lastvalidate = document.forms["part2form"]["ln"].value;
+			//checking for empty inputs
+			if (idvalidate == "" || firstvalidate == "" || lastvalidate == "") {
+				alert("You forgot to fill in the following field(s): ID, FirstName, LastName");
+				return false;
+			}
+			//prints user inputs
+			else {
+				var user = "UserID: " + idvalidate + "<br>FirstName: " + firstvalidate + "<br>LastName: " + lastvalidate;
+				document.getElementById("print").innerHTML = user;
+			}
+		}
+	</script>
+</body>
+</html>

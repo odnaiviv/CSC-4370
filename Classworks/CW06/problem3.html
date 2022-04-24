@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CW06 - Problem 3</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		//variables
+		//changed one of the 3's to -3
+		var arr1 = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+		var outputarr = [];
+		var min = arr1[0];
+		var max = arr1[0];
+		var position;
+		//for loop to determine the maximum/largest number in the array
+		for (var i = 0; i < arr1.length; i++) {
+			if (max < arr1[i]) {
+				max = arr1[i];
+			}
+		}
+		//for loop to iterate through every element in array
+		for (var i = 0; i < arr1.length; i++) {
+			for (var j = 0; j < arr1.length; j++) {
+				//checking if array element is not empty
+				if (arr1[j] != "x") {
+					//checking if array element is the smallest number
+					if (min > arr1[j]) {
+						min = arr1[j];
+						position = j;
+					}
+				}
+			}
+			//sorts the array from lowest to highest value
+			outputarr[i] = min;
+			arr1[position] = "x";
+			min = max;
+		}
+		//printing results by calling sample output variable
+		document.write(outputarr);
+		console.log(outputarr);
+	</script>
+
+</body>
+</html>
