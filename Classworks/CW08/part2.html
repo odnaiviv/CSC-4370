@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CW 08 Part 2</title>
+</head>
+
+<body>
+	<h1>CW 08 Part 2</h1>
+	<a href="part1.html">Link to Part 1</a>
+	<br><br>
+
+	<!-- html content -->
+	<canvas id="myCanvas" width="610" height="370" style="border: 1px solid gray"></canvas>
+
+	<div style="display:none;">
+		<!-- downloaded given link (https://c.tenor.com/Forg6sufPCMAAAAM/spinnig-on-fire.gif) as a gif file -->
+		<img src="ball.gif" id="basketball" alt="basketball">
+	</div>
+
+
+	<!-- javascript content -->
+	<script type="text/javascript">
+		let ball = {
+			x: 10,
+			y: 10,
+			xInc: 3,
+			yInc: 3,
+			scale: 1,
+			img: document.getElementById("basketball"),
+			rotation: 0,
+
+			// Draw the ball
+			draw: function() {
+				context.drawImage(this.img, this.x, this.y);
+				
+				// 2) adding to ball's rotation ?
+				this.rotation += 0.01;
+
+				// 2) adding the center variables in ?
+				let centerX = this.x + this.img.width / 2;
+				let centerY = this.y + this.img.height / 2;
+
+				// 3) making the ball scale up ? 
+				this.scale += 0.1;
+			},
+
+			// Move the ball
+			move: function() {
+				this.x += this.xInc;
+
+				// Bounce of the left and right canvas edges
+				if (this.x < 0 || this.x + this.img.width > canvas.width) {
+					this.xInc *= -1;
+				}
+
+				// 1) making the ball bounce up and down by adding the y properties
+				this.y += this.yInc;
+				if (this.y < 0 || this.y + this.img.height > canvas.height) {
+					this.yInc *= -1;
+				}
+			}
+		};
+
+			let canvas = document.getElementById("myCanvas");
+			let context = canvas.getContext("2d");
+
+			// Draw ball at starting position
+			context.save();
+			ball.draw();
+			context.restore();
+
+			// Used to cancel animation
+			let animFrameId;
+
+			// Start the animation when the mouse is on the canvas
+			canvas.addEventListener("mouseover", function(e) {
+				animFrameId = window.requestAnimationFrame(drawFrame);
+			});
+
+			// Stop the animation when the mouse is moved off the canvas
+			canvas.addEventListener("mouseout", function(e) {
+				window.cancelAnimationFrame(animFrameId);
+			});
+
+			// Draw a single frame
+			function drawFrame() {
+				context.clearRect(0, 0, canvas.width, canvas.height);
+
+				context.save();
+
+				// attemptiong to translate the ball before and after drawing it and scaling the ball but commented it out because it didn't work
+				//ball.translate(centerX, centerY);
+				
+				ball.draw();
+				ball.move();
+
+				//ball.translate(-centerX, -centerY);
+				//ball.scale(2.5);
+				context.restore();
+
+				animFrameId = window.requestAnimationFrame(drawFrame);
+			}
+
+	</script>
+</body>
+</html>

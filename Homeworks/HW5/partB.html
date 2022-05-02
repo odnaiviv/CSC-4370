@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW 5 Part B</title>
+	<!-- adding js file -->
+	<script src="guessing.js"></script>
+</head>
+
+<body onload="rng()">
+	<h1>HW 5 Part B</h1>
+	<a href="partA.html">Link to Part A</a> | 
+	<a href="partC.html">Link to Part C</a>
+	<br><br>
+
+	<!-- creating input where user chooses number -->
+	<br>
+	<p>Guess a Number between 1-100: </p>
+	<input type="text" name="number" id="num">
+	<br><br>
+	<!-- creating submit button where it checks the user's number -->
+	<input type="button" onclick="checknum()" value="Guess!">
+	<br>
+	<p id="attempts"></p>
+	
+</body>
+</html>

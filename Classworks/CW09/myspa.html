@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Reaction | Vivian Do</title>
+	<!-- linking external stylesheet -->
+	<link rel="stylesheet" href="index.css">
+
+	<!-- js react libraries -->
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+	<script scr="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+</head>
+
+<body>
+	<div>
+		<h1>My Simple SPA</h1>
+		<ul class="header">
+			<li>
+				<NavLink to="/">Home</NavLink>
+			</li>
+			<li>
+				<NavLink to="/stuff">The Good Stuff</NavLink>
+			</li>
+			<li>
+				<NavLink to="/contact">About</NavLink>
+			</li>
+		</ul>
+		<div class="content">
+			<script type="text/babel">
+				ReactDOM.render(<h1>My First Reaction</h1>, document.getElementByClassName('content'));
+			</script>
+		</div>
+	</div>
+</body>
+</html>
